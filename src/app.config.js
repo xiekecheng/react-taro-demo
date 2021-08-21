@@ -2,25 +2,41 @@
  * @Author: your name
  * @Date: 2021-08-20 20:21:57
  * @LastEditors: xkccoding@gmail.com
- * @LastEditTime: 2021-08-21 01:27:19
+ * @LastEditTime: 2021-08-21 17:06:51
  * @FilePath: /react-taro-demo/src/app.config.js
  */
 export default {
   pages: [
+    // 首页模块
+    
     'pages/index/index',
+    'pages/index/search/search',
+    // 我的模块
+    'pages/my/my',
+    'pages/my/contract/contract',
+    'pages/my/advise/advise',
+    'pages/my/collect/collect',
+    'pages/my/contact/contact',
+    'pages/my/entrust/entrust',
+    'pages/my/join/join',
+    'pages/my/settings/settings',
+    
+
+    // 'pages/index/address/address',
+    // 消息模块
     'pages/message/message',
-    'pages/my/my'
+
   ],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
-    navigationBarTitleText: '微信接口功能演示',
+    navigationBarTitleText: 'navigation',
     navigationBarTextStyle: 'black'
   },
   tabBar:{
-    color:'#A9A9A9',
-    selectedColor:'#383838',
-    backgroundColor:'#E2E2E2',
+    color:'#ADACAD',
+    selectedColor:'#131212',
+    backgroundColor:'#FFFFFF',
     borderStyle:'black',
     position:'bottom',
     list:[

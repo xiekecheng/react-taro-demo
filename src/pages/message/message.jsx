@@ -1,11 +1,13 @@
 // import React from 'react';
 
-const logs = () => {
+import { Icon, View } from "@tarojs/components";
+
+const MessagePage = () => {
 	return (
-		<div>
-			<h1>日志页面</h1>
-		</div>
+		<View>
+    
+		</View>
 	);
 };
 
-export default logs;
+export default MessagePage;

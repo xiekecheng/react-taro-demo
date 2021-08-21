@@ -1,3 +1,10 @@
+/*
+ * @Author: your name
+ * @Date: 2021-08-20 20:21:57
+ * @LastEditors: xkccoding@gmail.com
+ * @LastEditTime: 2021-08-21 10:02:47
+ * @FilePath: /react-taro-demo/config/index.js
+ */
 const config = {
   projectName: 'react-taro-demo',
   date: '2021-8-20',
@@ -45,6 +52,7 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
+    esnextModules: ['taro-ui'],
     postcss: {
       autoprefixer: {
         enable: true,
