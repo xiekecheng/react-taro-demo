@@ -1,0 +1,36 @@
+.my-banner {
+  width: 750px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  background-color: antiquewhite;
+  .banner-left {
+    width: 300px;
+    background-color: #2775b6;
+  }
+  .banner-right {
+    width: 300px;
+    background-color: #d1c2d3;
+  }
+}
+.at-tabs-pane{
+	background-color: #F4F4F4;
+}
+.compo-img {
+  width: 690px;
+  // height: 200px;
+  box-sizing: border-box;
+  margin: 20px 30px;
+  background-color: #FFFFFF;
+	border-radius: 20px;
+  .imgDesc {
+    width: 240px;
+    height: 240px;
+    background: #fff;
+		border-radius: 20px;
+  }
+	.left{
+		width: 240px;
+		height: 240px;
+	}
+}

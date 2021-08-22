@@ -26,7 +26,7 @@ const MyPage = () => {
     switch (index) {
       case 0:
         Taro.navigateTo({
-          url: "/pages/my/contract/contract",
+          url: "/pages/my/contract/contract",                          
         });
         break;
       case 1:
@@ -72,18 +72,18 @@ const MyPage = () => {
     }
   };
   return (
-    <View className="my-my">
+    <View className='my-my'>
       {/* 用户信息 开始 */}
-      <View className="user-info at-row">
+      <View className='user-info at-row'>
         {/* 头像 */}
-        <AtAvatar className="avatar" circle image={avatar}></AtAvatar>
+        <AtAvatar className='avatar' circle image={avatar}></AtAvatar>
         {/* 认证信息 */}
         <View>
           <View>+86-138****7300</View>
-          <AtTag size="small" circle>
+          <AtTag size='small' circle>
             个人认证 &gt;
           </AtTag>
-          <AtTag size="small" circle>
+          <AtTag size='small' circle>
             企业认证 &gt;
           </AtTag>
         </View>
@@ -91,7 +91,7 @@ const MyPage = () => {
       {/* 用户信息 结束 */}
 
       {/* 我的服务 开始 */}
-      <View className="my-service">
+      <View className='my-service'>
         <Text>我的服务</Text>
         <View>
           <AtGrid
@@ -121,7 +121,7 @@ const MyPage = () => {
       {/* 我的服务 结束 */}
 
       {/* 工具与服务 开始 */}
-      <View className="my-tool">
+      <View className='my-tool'>
         <Text>工具与服务</Text>
         <AtGrid
           hasBorder={false}
@@ -151,8 +151,8 @@ const MyPage = () => {
       {/* 工具与服务 结束 */}
 
       {/* 退出登录 */}
-      <View className="my-logout">
-        <View className="at-article__h2" onClick={handleLogout}>
+      <View className='my-logout'>
+        <View className='at-article__h2' onClick={handleLogout}>
           退出登录
         </View>
       </View>

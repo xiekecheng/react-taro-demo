@@ -6,7 +6,7 @@ import { AtGrid } from "taro-ui";
 export default class C extends Component {
   render() {
     return (
-      <View className="my-comp">
+      <View className='my-comp'>
         <AtGrid
           hasBorder={false}
           columnNum={5}
