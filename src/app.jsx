@@ -21,14 +21,15 @@ import store from "./store";
 export default class App extends Component {
   onLaunch() {
     console.log("启动了");
-    console.log("Taro", Taro);
     // 登录
     Taro.login({
       success: (res) => {
+        // 先获取code
         if (res.code) {
           console.log("登录成功", res.code);
+          // 处理登录
           Taro.request({
-            url: "http://localhost:9999/api/v1/weapp/login", //仅为示例，并非真实的接口地址
+            url: "http://localhost:9999/api/v1/weapp/login", 
             data: {
               appid: "wxff7fe8a650e2f6c4",
               secret: "f1d73aac814c78e49fe3e2b1f7d395ce",
@@ -40,19 +41,14 @@ export default class App extends Component {
               "content-type": "application/json", // 默认值
             },
             success: function (result) {
-              console.log("result.data", result.data);
+              console.log("token", result.data.data);
+              Taro.setStorageSync('token', result.data.data)
             },
           });
         }
       },
     });
 
-    // Taro.getUserProfile({
-    //   desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-    //   success: (result) => {
-    //     console.log('获取会员信息',result.data)
-    //   }
-    // })
 
     Taro.getLocation({
       type: 'wgs84',
