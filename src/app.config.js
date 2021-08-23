@@ -2,7 +2,7 @@
  * @Author: your name
  * @Date: 2021-08-20 20:21:57
  * @LastEditors: xkccoding@gmail.com
- * @LastEditTime: 2021-08-21 17:06:51
+ * @LastEditTime: 2021-08-23 17:31:38
  * @FilePath: /react-taro-demo/src/app.config.js
  */
 export default {
@@ -27,6 +27,12 @@ export default {
     'pages/message/message',
 
   ],
+  // 权限
+  permission: {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" // 高速公路行驶持续后台定位
+    }
+  },
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
