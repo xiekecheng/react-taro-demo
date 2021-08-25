@@ -60,21 +60,6 @@ export default class App extends Component {
         console.log('latitude',latitude);
       }
       })
-
-    // Taro.getUserProfile({
-    //   desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-    //   success: (result) => {
-    //     console.log('result.data',result.data)
-    //   }
-    // })
-    // componentDidShow () {
-    //   Taro.getUserProfile({
-    //     desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-    //     success: (result) => {
-    //       console.log('result.data',result.data)
-    //     }
-    //   })
-    // }
   }
   render() {
     return <Provider {...store}>{this.props.children}</Provider>;
